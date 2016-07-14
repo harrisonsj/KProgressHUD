@@ -271,6 +271,7 @@ public class KProgressHUD {
             Window window = getWindow();
             window.setBackgroundDrawable(new ColorDrawable(0));
             window.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+            window.addFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
             WindowManager.LayoutParams layoutParams = window.getAttributes();
             layoutParams.dimAmount = mDimAmount;
             layoutParams.gravity = Gravity.CENTER;
